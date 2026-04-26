@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  --color-accent-red: #D63447;
+  --color-bg-deep: #050510;
+  --font-outfit: 'Outfit', sans-serif;
+}
+
+@layer base {
+  body {
+    background: black;
+    color: white;
+    font-family: var(--font-outfit);
+    margin: 0;
+    overflow-x: hidden;
+  }
+}
+
+.radial-bg {
+  background: radial-gradient(circle at 50% 50%, #050510 0%, #000000 100%);
+}
+
+.glass-panel {
+  @apply bg-white/[0.03] backdrop-blur-xl border border-white/[0.08] rounded-2xl relative overflow-hidden;
+  box-shadow: 
+    inset 0 1px 1px 0 rgba(255, 255, 255, 0.05),
+    0 10px 40px -10px rgba(0, 0, 0, 0.5);
+}
+
+.glass-panel::before {
+  content: "";
+  @apply absolute inset-0 opacity-[0.03] pointer-events-none;
+  background-image: url("https://grainy-gradients.vercel.app/noise.svg");
+  filter: contrast(150%) brightness(100%);
+}
+
+section {
+  @apply py-24 relative;
+}
+
+h2 {
+  @apply text-3xl font-black uppercase tracking-widest text-center;
+}
+
+.divider {
+  @apply w-full h-[1px] bg-gradient-to-r from-transparent via-white/10 to-transparent my-12 relative;
+}
+
+.divider::after {
+  content: "";
+  @apply absolute left-1/2 -translate-x-1/2 -top-[1px] w-12 h-[3px] bg-accent-red shadow-[0_0_10px_#D63447];
+}
+
+.shadow-glow {
+  text-shadow: 0 0 15px rgba(214, 52, 71, 0.8), 0 0 30px rgba(214, 52, 71, 0.4);
+}
