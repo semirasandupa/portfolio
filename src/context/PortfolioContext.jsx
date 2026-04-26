@@ -8,18 +8,18 @@ export const PortfolioProvider = ({ children }) => {
   const [unrealPhotos, setUnrealPhotos] = useState(() => {
     const saved = localStorage.getItem('unrealPhotos');
     return saved ? JSON.parse(saved) : [
-      `${baseUrl}images/showcase/1-min.jpg`,
-      `${baseUrl}images/showcase/2-min.jpg`,
-      `${baseUrl}images/showcase/3-min.jpg`,
+      `${baseUrl}/images/showcase/1-min.jpg`,
+      `${baseUrl}/images/showcase/2-min.jpg`,
+      `${baseUrl}/images/showcase/3-min.jpg`,
     ];
   });
 
   const [unityPhotos, setUnityPhotos] = useState(() => {
     const saved = localStorage.getItem('unityPhotos');
     return saved ? JSON.parse(saved) : [
-      `${baseUrl}images/showcase/4-min.jpg`,
-      `${baseUrl}images/showcase/5-min.jpg`,
-      `${baseUrl}images/showcase/6-min.png`,
+      `${baseUrl}/images/showcase/4-min.jpg`,
+      `${baseUrl}/images/showcase/5-min.jpg`,
+      `${baseUrl}/images/showcase/6-min.png`,
     ];
   });
 

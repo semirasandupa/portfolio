@@ -4,15 +4,15 @@ import { motion, AnimatePresence } from 'framer-motion';
 const baseUrl = import.meta.env.BASE_URL;
 
 const projects = [
-  { id: 1, img: `${baseUrl}images/showcase/1-min.jpg`, title: 'Dark Vale', categories: ['web', 'branding', 'environment'] },
-  { id: 2, img: `${baseUrl}images/showcase/2-min.jpg`, title: 'Project 2', categories: ['branding', 'environment'] },
-  { id: 3, img: `${baseUrl}images/showcase/3-min.jpg`, title: 'Project 3', categories: ['branding', 'environment'] },
-  { id: 4, img: `${baseUrl}images/showcase/4-min.jpg`, title: 'Project 4', categories: ['web', 'environment'] },
-  { id: 5, img: `${baseUrl}images/showcase/5-min.jpg`, title: 'Project 5', categories: ['environment'] },
-  { id: 6, img: `${baseUrl}images/showcase/6-min.jpg`, title: 'Project 6', categories: ['web', 'environment'] },
-  { id: 7, img: `${baseUrl}images/showcase/7-min.jpg`, title: 'Project 7', categories: ['branding', 'environment'] },
-  { id: 8, img: `${baseUrl}images/showcase/8-min.jpg`, title: 'Project 8', categories: ['web', 'environment'] },
-  { id: 9, img: `${baseUrl}images/showcase/9-min.jpg`, title: 'Project 9', categories: ['web', 'branding', 'environment'] },
+  { id: 1, img: `${baseUrl}/images/showcase/1-min.jpg`, title: 'Dark Vale', categories: ['web', 'branding', 'environment'] },
+  { id: 2, img: `${baseUrl}/images/showcase/2-min.jpg`, title: 'Project 2', categories: ['branding', 'environment'] },
+  { id: 3, img: `${baseUrl}/images/showcase/3-min.jpg`, title: 'Project 3', categories: ['branding', 'environment'] },
+  { id: 4, img: `${baseUrl}/images/showcase/4-min.jpg`, title: 'Project 4', categories: ['web', 'environment'] },
+  { id: 5, img: `${baseUrl}/images/showcase/5-min.jpg`, title: 'Project 5', categories: ['environment'] },
+  { id: 6, img: `${baseUrl}/images/showcase/6-min.jpg`, title: 'Project 6', categories: ['web', 'environment'] },
+  { id: 7, img: `${baseUrl}/images/showcase/7-min.jpg`, title: 'Project 7', categories: ['branding', 'environment'] },
+  { id: 8, img: `${baseUrl}/images/showcase/8-min.jpg`, title: 'Project 8', categories: ['web', 'environment'] },
+  { id: 9, img: `${baseUrl}/images/showcase/9-min.jpg`, title: 'Project 9', categories: ['web', 'branding', 'environment'] },
 ];
 
 const Showcase = () => {

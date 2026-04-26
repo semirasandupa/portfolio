@@ -29,7 +29,7 @@ const Hero = () => {
         className="absolute inset-0 z-0 flex items-center justify-center pointer-events-none"
       >
         <img 
-          src={`${baseUrl}images/mask_man.jpg`} 
+          src={`${baseUrl}/images/mask_man.jpg`} 
           alt="Masked Figure" 
           className="h-[110vh] w-auto object-contain transition-all duration-1000"
           style={{ 

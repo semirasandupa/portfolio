@@ -4,9 +4,9 @@ import { motion } from 'framer-motion';
 const baseUrl = import.meta.env.BASE_URL;
 
 const services = [
-  { img: `${baseUrl}images/logo-puma.png`, title: 'Unity 3D', desc: "Building complex, interactive environments and game levels using Unity's powerful engine." },
-  { img: `${baseUrl}images/logo-google.png`, title: 'Environment Development', desc: 'Specializing in cinematic world-building, landscape sculpting, and lighting design.' },
-  { img: `${baseUrl}images/logo-paypal.png`, title: 'Blender', desc: 'High-fidelity 3D modeling, asset creation, and architectural visualization.' },
+  { img: `${baseUrl}/images/logo-puma.png`, title: 'Unity 3D', desc: "Building complex, interactive environments and game levels using Unity's powerful engine." },
+  { img: `${baseUrl}/images/logo-google.png`, title: 'Environment Development', desc: 'Specializing in cinematic world-building, landscape sculpting, and lighting design.' },
+  { img: `${baseUrl}/images/logo-paypal.png`, title: 'Blender', desc: 'High-fidelity 3D modeling, asset creation, and architectural visualization.' },
 ];
 
 const Services = () => {
