@@ -56,11 +56,11 @@ function App() {
           {/* Tools Scroll bar */}
           <section className="py-16 border-y border-white/5 my-10 bg-white/1 backdrop-blur-sm">
             <div className="container mx-auto px-6 flex flex-wrap justify-center gap-12 md:gap-24 items-center opacity-40 hover:opacity-100 transition-opacity duration-700">
-                <img src={`${baseUrl}images/logo-adobe.png`} alt="Adobe" className="h-8 md:h-10 hover:scale-110 transition-all cursor-pointer" />
-                <img src={`${baseUrl}images/logo-discord.png`} alt="Discord" className="h-8 md:h-10 hover:scale-110 transition-all cursor-pointer" />
-                <img src={`${baseUrl}images/logo-google.png`} alt="Google" className="h-8 md:h-10 hover:scale-110 transition-all cursor-pointer" />
-                <img src={`${baseUrl}images/logo-puma.png`} alt="Puma" className="h-8 md:h-10 hover:scale-110 transition-all cursor-pointer" />
-                <img src={`${baseUrl}images/logo-paypal.png`} alt="Paypal" className="h-8 md:h-10 hover:scale-110 transition-all cursor-pointer" />
+                <img src={`${baseUrl}/images/logo-adobe.png`} alt="Adobe" className="h-8 md:h-10 hover:scale-110 transition-all cursor-pointer" />
+                <img src={`${baseUrl}/images/logo-discord.png`} alt="Discord" className="h-8 md:h-10 hover:scale-110 transition-all cursor-pointer" />
+                <img src={`${baseUrl}/images/logo-google.png`} alt="Google" className="h-8 md:h-10 hover:scale-110 transition-all cursor-pointer" />
+                <img src={`${baseUrl}/images/logo-puma.png`} alt="Puma" className="h-8 md:h-10 hover:scale-110 transition-all cursor-pointer" />
+                <img src={`${baseUrl}/images/logo-paypal.png`} alt="Paypal" className="h-8 md:h-10 hover:scale-110 transition-all cursor-pointer" />
             </div>
           </section>
 
