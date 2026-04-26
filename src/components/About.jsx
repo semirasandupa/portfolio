@@ -1,6 +1,8 @@
 import React, { useState, useRef } from 'react';
 import { motion, useSpring, useMotionValue, useMotionTemplate } from 'framer-motion';
 
+const baseUrl = import.meta.env.BASE_URL;
+
 const About = () => {
   const [isHovered, setIsHovered] = useState(false);
   const containerRef = useRef(null);
@@ -64,7 +66,7 @@ const About = () => {
             >
               {/* Base Image (Mask 1) */}
               <motion.img 
-                src="/images/mask1.png" 
+                src={`${baseUrl}images/mask1.png`} 
                 alt="Background" 
                 animate={{
                     filter: isHovered ? 'blur(8px) brightness(0.5)' : 'blur(0px) brightness(1)',
@@ -90,7 +92,7 @@ const About = () => {
                 transition={{ duration: 1, ease: "easeOut" }}
               >
                 <img 
-                    src="/images/mask2.png" 
+                    src={`${baseUrl}images/mask2.png`} 
                     alt="Mask Overlay" 
                     className="w-full h-full object-cover"
                 />

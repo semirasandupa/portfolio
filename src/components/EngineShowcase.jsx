@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { usePortfolio } from '../context/PortfolioContext';
 
+const baseUrl = import.meta.env.BASE_URL;
+
 const EngineShowcase = () => {
   const { unrealPhotos, unityPhotos } = usePortfolio();
   const [view, setView] = useState('menu');
@@ -56,11 +58,11 @@ const EngineShowcase = () => {
               >
                 {/* Lateral Depth Elements */}
                 <div className="absolute -left-[30vw] top-0 w-80 opacity-5 hidden xl:block -rotate-6 pointer-events-none select-none">
-                   <img src="/images/showcase/7-min.jpg" className="w-full rounded-sm mb-6 grayscale" alt="" />
+                   <img src={`${baseUrl}images/showcase/7-min.jpg`} className="w-full rounded-sm mb-6 grayscale" alt="" />
                    <div className="text-[8px] tracking-[5px] text-white opacity-40 uppercase">Aesthetic.Vol.01</div>
                 </div>
                 <div className="absolute -right-[30vw] top-0 w-80 opacity-5 hidden xl:block rotate-6 pointer-events-none select-none">
-                   <img src="/images/showcase/9-min.jpg" className="w-full rounded-sm mb-6 grayscale" alt="" />
+                   <img src={`${baseUrl}images/showcase/9-min.jpg`} className="w-full rounded-sm mb-6 grayscale" alt="" />
                    <div className="text-[8px] tracking-[5px] text-white opacity-40 uppercase">Atmosphere.Vol.02</div>
                 </div>
 
@@ -113,7 +115,7 @@ const EngineShowcase = () => {
                             transition={{ type: "spring", stiffness: 300, damping: 20 }}
                             className="absolute top-1/4 left-1/2 w-24 h-24 md:w-36 md:h-36 bg-white rounded-full z-30 shadow-2xl flex items-center justify-center p-6 md:p-10 cursor-pointer"
                         >
-                            <img src="/images/unreal.png" className="w-full h-full object-contain mix-blend-multiply" alt="Unreal" />
+                            <img src={`${baseUrl}images/unreal.png`} className="w-full h-full object-contain mix-blend-multiply" alt="Unreal" />
                         </motion.div>
 
                         <motion.div 
@@ -133,7 +135,7 @@ const EngineShowcase = () => {
                             transition={{ type: "spring", stiffness: 300, damping: 20 }}
                             className="absolute bottom-1/4 left-1/2 w-24 h-24 md:w-36 md:h-36 bg-black rounded-full z-30 shadow-2xl flex items-center justify-center p-6 md:p-10 border-4 border-white/5 cursor-pointer"
                         >
-                            <img src="/images/logo-puma.png" className="w-full h-full object-contain" alt="Unity" />
+                            <img src={`${baseUrl}images/logo-puma.png`} className="w-full h-full object-contain" alt="Unity" />
                         </motion.div>
                     </motion.div>
                 </div>

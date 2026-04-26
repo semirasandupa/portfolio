@@ -2,9 +2,11 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { MessageCircle, MapPin } from 'lucide-react';
 
+const baseUrl = import.meta.env.BASE_URL;
+
 const Contact = () => {
   const contactData = [
-    { label: 'Discord', value: 'Join Official Discord Server', icon: <img src="/images/logos/discord.svg" className="w-4 h-4 object-contain brightness-0 invert opacity-60 group-hover:opacity-100 group-hover:brightness-100 group-hover:invert-0 transition-all font-black text-accent-red" alt="Discord" />, href: 'https://discord.gg/5ZMdBRKHUg' },
+    { label: 'Discord', value: 'Join Official Discord Server', icon: <img src={`${baseUrl}images/logos/discord.svg`} className="w-4 h-4 object-contain brightness-0 invert opacity-60 group-hover:opacity-100 group-hover:brightness-100 group-hover:invert-0 transition-all font-black text-accent-red" alt="Discord" />, href: 'https://discord.gg/5ZMdBRKHUg' },
     { label: 'Github', value: '@semirasandupa', icon: <span className="text-[10px] font-black text-accent-red opacity-60 group-hover:opacity-100">[GIT]</span>, href: 'https://github.com/semirasandupa' },
     { label: 'Address', value: 'Colombo, Sri Lanka', icon: <MapPin size={18} className="text-accent-red opacity-60 group-hover:opacity-100 transition-all" />, href: null },
   ];
