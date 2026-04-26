@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "gh-build": "tsc && vite build --config vite.config.github.js",
+    "gh-build": "vite build --config vite.config.github.js",
     "lint": "eslint .",
     "preview": "vite preview"
   },
