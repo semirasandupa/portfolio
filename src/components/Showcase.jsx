@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-const baseUrl = import.meta.env.BASE_URL;
+const baseUrl = "https://semirasandupa.github.io/portfolio";
 
 const projects = [
   { id: 1, img: `${baseUrl}/images/showcase/1-min.jpg`, title: 'Dark Vale', categories: ['web', 'branding', 'environment'] },

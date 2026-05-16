@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion';
 
-const baseUrl = import.meta.env.BASE_URL;
+const baseUrl = "https://semirasandupa.github.io/portfolio";
 
 const Hero = () => {
   const { scrollY } =

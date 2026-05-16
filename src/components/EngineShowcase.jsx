@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { usePortfolio } from '../context/PortfolioContext';
 
-const baseUrl = import.meta.env.BASE_URL;
+const baseUrl = "https://semirasandupa.github.io/portfolio";
 
 const EngineShowcase = () => {
   const { unrealPhotos, unityPhotos } = usePortfolio();

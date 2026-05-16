@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { MessageCircle, MapPin } from 'lucide-react';
 
-const baseUrl = import.meta.env.BASE_URL;
+const baseUrl = "https://semirasandupa.github.io/portfolio";
 
 const Contact = () => {
   const contactData = [

@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { motion, useSpring, useMotionValue, useMotionTemplate } from 'framer-motion';
 
-const baseUrl = import.meta.env.BASE_URL;
+const baseUrl = "https://semirasandupa.github.io/portfolio";
 
 const About = () => {
   const [isHovered, setIsHovered] = useState(false);

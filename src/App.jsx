@@ -38,7 +38,7 @@ function App() {
     );
   }
 
-  const baseUrl = import.meta.env.BASE_URL;
+  const baseUrl = "https://semirasandupa.github.io/portfolio";
 
   return (
     <PortfolioProvider>

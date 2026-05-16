@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const baseUrl = import.meta.env.BASE_URL;
+const baseUrl = "https://semirasandupa.github.io/portfolio";
 
 const services = [
   { img: `${baseUrl}/images/logo-puma.png`, title: 'Unity 3D', desc: "Building complex, interactive environments and game levels using Unity's powerful engine." },

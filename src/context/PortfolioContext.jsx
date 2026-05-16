@@ -2,7 +2,7 @@ import React, { createContext, useContext, useState, useEffect } from 'react';
 
 const PortfolioContext = createContext();
 
-const baseUrl = import.meta.env.BASE_URL;
+const baseUrl = "https://semirasandupa.github.io/portfolio";
 
 export const PortfolioProvider = ({ children }) => {
   const [unrealPhotos, setUnrealPhotos] = useState(() => {
